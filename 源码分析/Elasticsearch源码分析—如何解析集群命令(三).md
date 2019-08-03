@@ -16,7 +16,7 @@
  ~~~
  如果elasticsearch.yml文件中配置了http.enabled参数(默认为true),则会初始化RestHandlers,即一系列可以处理rest命令的处理器,Elasticsearch添加了大量的内置命令
  处理器来处理各种需要的rest命令,如下:
- ~~~java
+ ActionModel.java
  registerHandler.accept(new RestMainAction(settings, restController));
          registerHandler.accept(new RestNodesInfoAction(settings, restController, settingsFilter));
          registerHandler.accept(new RestRemoteClusterInfoAction(settings, restController));
